@@ -1,0 +1,189 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    position: relative;
+}
+.container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.box {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+.shape.box {
+    height: 100%;
+    width: 15%;
+    outline: 3px solid black; /* for some reason if i use 'border', i cannot drag any items*/
+}
+
+.play.box {
+    height: 100%;
+    width: 85%;
+}
+
+.instruction {
+    position: relative;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #ADADAD;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 250px auto;
+    height: 100px;
+    float: none;
+}
+
+.element {
+    cursor: pointer;
+}
+
+.square {
+    height: 60px;
+    width: 60px;
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    background-color: green;
+}
+
+.vRectangle {
+    width: 40px;
+    height: 80px;
+    top: 20px;
+    left: 150px;
+    position: absolute;
+    background-color: orange;
+}
+
+.hRectangle {
+    width: 80px;
+    height: 40px;
+    top: 130px;
+    left: 20px;
+    background-color: purple;
+    position: absolute;
+}
+
+.lPara {
+	width: 100px;
+	height: 50px;
+	-webkit-transform: skew(20deg);
+	        -ms-transform: skew(20deg);
+	    transform: skew(20deg);
+    background: #555;
+    top: 220px;
+    left: 20px;
+    position: absolute;
+}
+
+.rPara {
+	width: 100px;
+	height: 50px;
+	-webkit-transform: skew(160deg);
+	        -ms-transform: skew(160deg);
+	    transform: skew(160deg);
+    background: red;
+    top: 300px;
+    left: 20px;
+    position: absolute;
+}
+
+.regTriangle {
+    width: 0;
+    height: 0;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    border-bottom: 50px solid orange;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    position: absolute;
+    top: 220px;
+    left: 150px;
+
+}
+
+.rightTriangle {
+    position: absolute;
+    width: 0;
+    border-top: 60px solid transparent;
+    border-right: 60px solid brown;
+    border-left: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    top: 110px;
+    left: 150px;
+}
+.rightLTriangle {
+    position: absolute;
+    width: 0;
+    border-top: 60px solid transparent;
+    border-right: 0px solid transparent;
+    border-left: 60px solid purple;
+    border-bottom: 0px solid transparent;
+    top: 480px;
+    left: 150px;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 300px;
+    left: 150px;
+}
+
+.tRightCirc {
+    width: 50px;
+    height: 50px;
+    background: blue;
+    border-radius: 0 0 0 100px;
+    -moz-border-radius: 0 0 0 100px;
+    -webkit-border-radius: 0 0 0 100px;
+    position: absolute;
+    top: 400px;
+    left: 20px;
+}
+
+.tLeftCirc {
+    width: 50px;
+    height: 50px;
+    background:pink;
+    border-radius: 0 0 100px 0;
+    -moz-border-radius: 0 0 100px 0;
+    -webkit-border-radius: 0 0 100px 0;
+    position: absolute;
+    top: 400px;
+    left: 150px;
+}
+
+.hCirc {
+    height:45px;
+    width:90px;
+    border-radius: 90px 90px 0 0;
+    background:green;
+    position: absolute;
+    top: 480px;
+    left: 20px;
+}
